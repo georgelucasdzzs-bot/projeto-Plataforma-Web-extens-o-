@@ -396,3 +396,20 @@ body {
         margin-left: 0 !important;
     }
 }
+.need-card {
+    height: 100%;
+    padding: 1rem;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+}
+
+.need-card h3 {
+    margin: 1rem 0 .35rem;
+    font-size: .98rem;
+}
+
+.need-card p,
+.need-card small {
+    color: var(--muted);
+    font-size: .78rem;
+}

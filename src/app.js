@@ -1,8 +1,9 @@
-import { donationStore  } from "./modules/donation/donationModulo.js";
+import * as donationModule from './modules/donation/donationModule.js'
 
-document.querySelector('#sho')
-.addEventListener( 'click',()=>{
-  window.alert(`Largura:`,$,{windowinnerWidth},px )
+document.querySelector('#show-window')
+  .addEventListener('click', () => {
 
-})
+    window.alert(`Largura: ${window.innerWidth} px | Altura: ${window.innerHeight}`)
+  })
 
+  donationModule.render()

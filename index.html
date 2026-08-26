@@ -19,8 +19,8 @@
             </a>
           <p class="menu-label">Menu Principal</p>
           <nav class="nav flex-column gap-1" aria-label="Navegação principal"></nav>
-          <a class="nav-link active" href="/index.html">Home</a>
-          <a class="nav-link " href="/doações.html">Doações</a>
+          <a class="nav-link active" href="/projeto-Plataforma-Web-extens-o-/index.html">Home</a>
+          <a class="nav-link " href="/projeto-Plataforma-Web-extens-o-/doações.html">Doações</a>
 
         </aside>
         <main class="main-content" id="inicio">
@@ -43,7 +43,54 @@
             </div>
           </header>
             <section class="content-area">
-        
+               <div class="row g-4">
+                    <div class="col-xl-8" id="doacoes">
+                        <section class="panel h-100">
+                            <div class="panel-heading d-flex justify-content-between align-items-center gap-2">
+                                <div>
+                                    <h2>Doações recentes</h2>
+                                    <p>Acompanhe as últimas contribuições recebidas.</p>
+                                </div><a href="#doacoes">Ver todas →</a>
+                            </div>
+                            <div class="table-responsive">
+                                <table class="table align-middle mb-0">
+                                    <thead>
+                                        <tr>
+                                            <th>Doador</th>
+                                            <th>Item</th>
+                                            <th>Data</th>
+                                            <th>Status</th>
+                                            <th>Valor</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="donations-table"></tbody>
+                                </table>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="col-xl-4" id="necessidades">
+                        <section class="panel h-100">
+                            <div class="panel-heading">
+                                <h2>Necessidades da ONG</h2>
+                                <p>Itens que precisam de atenção.</p>
+                            </div>
+                            <div class="needs-list">
+                                <div class="need-item"><span class="need-dot urgent"></span>
+                                    <div><strong>Cestas básicas</strong><small>Faltam 24 unidades</small></div><span
+                                        class="badge-soft red">Urgente</span>
+                                </div>
+                                <div class="need-item"><span class="need-dot"></span>
+                                    <div><strong>Material escolar</strong><small>Faltam 60 kits</small></div><span
+                                        class="badge-soft yellow">Atenção</span>
+                                </div>
+                                <div class="need-item"><span class="need-dot"></span>
+                                    <div><strong>Roupas infantis</strong><small>Faltam 35 peças</small></div><span
+                                        class="badge-soft green">Normal</span>
+                                </div>
+                            </div><button class="btn btn-outline-primary w-100 mt-3">Gerenciar necessidades</button>
+                        </section>
+                    </div>
+                </div>
                
             </section>
         </main>
