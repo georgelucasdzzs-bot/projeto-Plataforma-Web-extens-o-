@@ -19,8 +19,8 @@
             </a>
           <p class="menu-label">Menu Principal</p>
           <nav class="nav flex-column gap-1" aria-label="Navegação principal"></nav>
-          <a class="nav-link active" href="/index.html">Home</a>
-          <a class="nav-link " href="/doações.html">Doações</a>
+          <a class="nav-link active" href="index.html">Home</a>
+          <a class="nav-link " href="doações.html">Doações</a>
 
         </aside>
         <main class="main-content" id="inicio">
@@ -43,7 +43,35 @@
             </div>
           </header>
             <section class="content-area">
-        
+                <section class="panel mb-4">
+                    <div class="panel-heading d-flex justify-content-between align-items-center gap-2">
+                        <div>
+                            <h2>Lista de Necessidades</h2>
+                            <p>Pesquise e filtro os itens que podem ser doados</p>
+                        </div>
+                        ,<button class="btn btn" id="show-window">Informaçõ~es da Janela</button>
+
+
+
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label class="visually-hidden">Pesquisar</label>
+                            <input class="form-control" placeholder="Pesquisar por item ou categoria" id="search"/>
+                        </div>
+                        <div class="col-md-4">
+                            <select class="form-selecter">
+                                <option value="todas">todas</option>
+                                <option value="urgente">urgente</option>
+                                <option value="atencao">atencao</option>
+                                <option value="normal">normal</option>
+                            </select>
+                        </div>
+                
+                    </div>
+                    <div class="row gap-3 mb-4" id="donations-content"></div>
+                   
+                </section>
                
             </section>
         </main>
